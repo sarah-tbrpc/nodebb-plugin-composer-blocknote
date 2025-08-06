@@ -1,21 +1,31 @@
 {
   "name": "nodebb-plugin-composer-blocknote",
   "version": "0.1.0",
-  "description": "A starter kit for quickly creating NodeBB plugins",
+  "description": "A modern block-based composer for NodeBB using BlockNoteJS.",
+  "type": "module",
   "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart"
-  },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+"build": "esbuild static/composer.js --bundle --outfile=static/dist/composer.bundle.js --loader:.js=jsx --loader:.woff=file --loader:.woff2=file"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "quickstart",
-    "shell"
+    "composer",
+    "blocknote"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/nodebb-plugin-composer-blocknote"
+  },
+  "license": "MIT",
+  "readme": "README.md",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/nodebb-plugin-composer-blocknote/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^3.2.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -27,14 +37,6 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart/issues"
-  },
-  "readmeFilename": "README.md",
-  "nbbpm": {
-    "compatibility": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
@@ -50,7 +52,8 @@
     "lint-staged": "16.1.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.0",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "esbuild": "^0.19.0"
   },
   "dependencies": {
     "@blocknote/core": "^0.35.0",

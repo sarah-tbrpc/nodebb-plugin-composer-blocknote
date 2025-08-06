@@ -1,16 +1,26 @@
-{
-  "id": "nodebb-plugin-composer-blocknote",
-  "name": "BlockNote Composer",
-  "description": "A modern block-based composer for NodeBB using BlockNoteJS.",
-  "version": "0.1.0",
-  "library": "library.js",
-  "scripts": ["static/dist/composer.bundle.js"],
-  "templates": "templates",
-  "hooks": [
-    { "hook": "static:app.load", "method": "initClient" },
-    { "hook": "filter:parse.post", "method": "parseBlocknoteContent" }
-  ],
-  "nbbpm": {
-    "compatibility": "^3.0.0"
-  }
-}
+'use strict';
+
+const plugin = {};
+
+plugin.initClient = async function ({ router, middleware }) {
+  router.get('/admin/plugins/composer-blocknote', middleware.admin.buildHeader, (req, res) => {
+    res.render('admin/plugins/composer-blocknote', {});
+  });
+
+  router.get('/api/admin/plugins/composer-blocknote', (req, res) => {
+    res.json({ status: 'OK' });
+  });
+};
+
+plugin.parseBlocknoteContent = async function (data) {
+  // Currently just passes through raw content; customize if needed
+  return data;
+};
+
+plugin.getFormattingOptions = async function (data) {
+  // Disable all default buttons since BlockNote handles formatting
+  data.options = [];
+  return data;
+};
+
+module.exports = plugin;
