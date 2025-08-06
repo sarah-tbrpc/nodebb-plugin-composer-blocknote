@@ -18,6 +18,8 @@ function EditorWrapper() {
 $(document).ready(() => {
   const composerContainer = document.querySelector('#blocknote-composer');
   if (composerContainer) {
+    composerContainer.classList.add('blocknote-composer'); // ✅ Add the identifying class
+
     const root = createRoot(composerContainer);
     root.render(<EditorWrapper />);
   }
