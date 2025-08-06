@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "library": "library.js",
   "scripts": ["static/dist/composer.bundle.js"],
+  "templates": "templates",
   "hooks": [
     { "hook": "static:app.load", "method": "initClient" },
     { "hook": "filter:parse.post", "method": "parseBlocknoteContent" }
