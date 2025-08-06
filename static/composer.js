@@ -16,10 +16,9 @@ function EditorWrapper() {
 }
 
 $(document).ready(() => {
-  const composerContainer = document.querySelector('#composer .write');
-  if (composerContainer) {
-    composerContainer.innerHTML = ''; // Clear default composer
-    const root = createRoot(composerContainer);
+  const mountNode = document.querySelector('#blocknote-composer');
+  if (mountNode) {
+    const root = createRoot(mountNode);
     root.render(<EditorWrapper />);
   }
 });

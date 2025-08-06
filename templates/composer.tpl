@@ -1,4 +1,4 @@
 <!-- templates/composer.tpl -->
-<div id="composer">
-  <div class="write"></div>
+<div class="write">
+  <div id="blocknote-composer"></div>
 </div>
