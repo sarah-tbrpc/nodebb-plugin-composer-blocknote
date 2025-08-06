@@ -1,0 +1,16 @@
+{
+  "id": "nodebb-plugin-composer-blocknote",
+  "name": "BlockNote Composer",
+  "description": "A modern block-based composer for NodeBB using BlockNoteJS.",
+  "version": "0.1.0",
+  "library": "library.js",
+  "scripts": ["static/composer.js"],
+  "scss": ["public/scss/plugin.scss"],
+  "hooks": [
+    { "hook": "static:app.load", "method": "initClient" },
+    { "hook": "filter:parse.post", "method": "parseBlocknoteContent" }
+  ],
+  "nbbpm": {
+    "compatibility": "^3.0.0"
+  }
+}
