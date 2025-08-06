@@ -20,7 +20,7 @@ plugin.parseBlocknoteContent = async function (data) {
 };
 
 plugin.getFormattingOptions = async function (data) {
-  data.options = []; // Empty formatting toolbar (you can add buttons later)
+  data.options = []; // Return an empty array if you're not using any formatting buttons
   return data;
 };
 

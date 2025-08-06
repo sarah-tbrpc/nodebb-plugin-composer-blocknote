@@ -7,8 +7,9 @@ import '@blocknote/mantine/style.css';
 
 function EditorWrapper() {
   const editor = useCreateBlockNote();
+
   return (
-    <div style={{ background: "#fff", border: "1px solid #ccc", padding: "1rem" }}>
+    <div style={{ background: "#fff", border: "1px solid #ccc", padding: "1rem", borderRadius: "8px" }}>
       <BlockNoteViewEditor editor={editor} />
     </div>
   );
@@ -17,7 +18,6 @@ function EditorWrapper() {
 $(document).ready(() => {
   const composerContainer = document.querySelector('#blocknote-composer');
   if (composerContainer) {
-    composerContainer.innerHTML = '';
     const root = createRoot(composerContainer);
     root.render(<EditorWrapper />);
   }
