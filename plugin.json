@@ -4,7 +4,7 @@
   "description": "A modern block-based composer for NodeBB using BlockNoteJS.",
   "version": "0.1.0",
   "library": "library.js",
-  "scripts": ["static/composer.js"],
+  "scripts": ["static/dist/composer.bundle.js"],
   "scss": ["public/scss/plugin.scss"],
   "hooks": [
     { "hook": "static:app.load", "method": "initClient" },
