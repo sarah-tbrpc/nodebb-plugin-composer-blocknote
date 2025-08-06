@@ -30,7 +30,7 @@
   "hooks": [
     { "hook": "static:app.load", "method": "initClient" },
     { "hook": "filter:parse.post", "method": "parseBlocknoteContent" },
-    { "hook": "filter:composer.formatting", "method": "getFormattingOptions" }
+    { "hook": "filter:composer.getFormattingOptions", "method": "getFormattingOptions" }
   ],
   "husky": {
     "hooks": {
@@ -48,8 +48,6 @@
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-angular": "19.8.1",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "eslint": "9.32.0",
