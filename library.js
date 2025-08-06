@@ -3,7 +3,7 @@
 const plugin = {};
 
 plugin.init = async function (params) {
-  // You can log here if needed
+  // Optional: Add any plugin init logic here
 };
 
 plugin.initClient = async function ({ router, middleware }) {
