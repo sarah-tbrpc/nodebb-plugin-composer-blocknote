@@ -3,7 +3,6 @@
   "name": "BlockNote Composer",
   "description": "A modern block-based composer for NodeBB using BlockNoteJS.",
   "version": "0.1.0",
-  "type": "module",
   "main": "library.js",
   "scripts": {
     "lint": "eslint .",
@@ -27,11 +26,11 @@
   "nbbpm": {
     "compatibility": "^3.2.0"
   },
-  "hooks": [
-    { "hook": "static:app.load", "method": "initClient" },
-    { "hook": "filter:parse.post", "method": "parseBlocknoteContent" },
-    { "hook": "filter:composer.getFormattingOptions", "method": "getFormattingOptions" }
-  ],
+"hooks": [
+  { "hook": "static:app.load", "method": "initClient" },
+  { "hook": "filter:parse.post", "method": "parseBlocknoteContent" },
+  { "hook": "filter:composer.formatting", "method": "getFormattingOptions" }
+],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",

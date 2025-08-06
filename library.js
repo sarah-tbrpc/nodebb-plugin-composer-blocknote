@@ -2,9 +2,11 @@
 
 const plugin = {};
 
-plugin.initClient = async function (params) {
-  const { router, middleware } = params;
+plugin.init = async function (params) {
+  // You can log here if needed
+};
 
+plugin.initClient = async function ({ router, middleware }) {
   router.get('/admin/plugins/composer-blocknote', middleware.admin.buildHeader, (req, res) => {
     res.render('admin/plugins/composer-blocknote', {});
   });
@@ -15,12 +17,12 @@ plugin.initClient = async function (params) {
 };
 
 plugin.parseBlocknoteContent = async function (data) {
-  // For now, return the post content as-is
+  // Just return content for now
   return data;
 };
 
 plugin.getFormattingOptions = async function (data) {
-  data.options = []; // Return an empty array if you're not using any formatting buttons
+  data.options = []; // Return empty options to disable toolbar
   return data;
 };
 
