@@ -1,1 +1,184 @@
-/* Place any SASS in here */
+/* BlockNote Composer Styles */
+
+.blocknote-composer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .blocknote-editor-wrapper {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: #c8cdd1;
+    }
+
+    &:focus-within {
+      border-color: #0969da;
+      box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+    }
+  }
+
+  // Ensure BlockNote editor takes full width
+  .bn-container {
+    width: 100%;
+  }
+
+  // Improve spacing for blocks
+  .bn-block-outer {
+    margin-bottom: 0.5em;
+  }
+
+  // Style placeholders
+  .bn-block-content[data-content-type="paragraph"]:empty::before {
+    color: #6c757d;
+    opacity: 0.6;
+  }
+
+  // Image styling
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  figure {
+    margin: 1em 0;
+
+    figcaption {
+      color: #6c757d;
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 0.5em;
+    }
+  }
+
+  // Link styling
+  a {
+    color: #0969da;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: #0969da;
+    }
+  }
+
+  // Code block styling
+  pre {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9em;
+
+    code {
+      background: transparent;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  code {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9em;
+  }
+
+  // List styling
+  ul, ol {
+    padding-left: 2em;
+    margin: 0.5em 0;
+  }
+
+  li {
+    margin: 0.25em 0;
+  }
+
+  // Table styling
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+
+    th, td {
+      border: 1px solid #e1e4e8;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #f6f8fa;
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background: #f6f8fa;
+    }
+  }
+
+  // Heading styles
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  h1 { font-size: 2em; border-bottom: 1px solid #e1e4e8; padding-bottom: 0.3em; }
+  h2 { font-size: 1.5em; border-bottom: 1px solid #e1e4e8; padding-bottom: 0.3em; }
+  h3 { font-size: 1.25em; }
+  h4 { font-size: 1em; }
+  h5 { font-size: 0.875em; }
+  h6 { font-size: 0.85em; color: #6c757d; }
+
+  // Formatting toolbar styling
+  .bn-formatting-toolbar {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    padding: 4px;
+  }
+
+  // Side menu styling
+  .bn-side-menu {
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // Drag handle styling
+  .bn-drag-handle {
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Override default NodeBB composer styles if needed
+[component="composer"] {
+  .blocknote-composer {
+    // Ensure proper integration with NodeBB
+    textarea {
+      display: none; // Hide the default textarea
+    }
+  }
+}
