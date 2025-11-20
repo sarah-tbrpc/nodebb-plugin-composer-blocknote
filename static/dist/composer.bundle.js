@@ -22595,7 +22595,7 @@
     var _a3;
     return (_a3 = TAG_NAME_TO_ID.get(tagName)) !== null && _a3 !== void 0 ? _a3 : TAG_ID.UNKNOWN;
   }
-  var NS, ATTRS, DOCUMENT_MODE, TAG_NAMES, TAG_ID, TAG_NAME_TO_ID, $2, SPECIAL_ELEMENTS, NUMBERED_HEADERS, UNESCAPED_TEXT;
+  var NS, ATTRS, DOCUMENT_MODE, TAG_NAMES, TAG_ID, TAG_NAME_TO_ID, $, SPECIAL_ELEMENTS, NUMBERED_HEADERS, UNESCAPED_TEXT;
   var init_html2 = __esm({
     "node_modules/parse5/dist/common/html.js"() {
       (function(NS2) {
@@ -22997,98 +22997,98 @@
         [TAG_NAMES.WBR, TAG_ID.WBR],
         [TAG_NAMES.XMP, TAG_ID.XMP]
       ]);
-      $2 = TAG_ID;
+      $ = TAG_ID;
       SPECIAL_ELEMENTS = {
         [NS.HTML]: /* @__PURE__ */ new Set([
-          $2.ADDRESS,
-          $2.APPLET,
-          $2.AREA,
-          $2.ARTICLE,
-          $2.ASIDE,
-          $2.BASE,
-          $2.BASEFONT,
-          $2.BGSOUND,
-          $2.BLOCKQUOTE,
-          $2.BODY,
-          $2.BR,
-          $2.BUTTON,
-          $2.CAPTION,
-          $2.CENTER,
-          $2.COL,
-          $2.COLGROUP,
-          $2.DD,
-          $2.DETAILS,
-          $2.DIR,
-          $2.DIV,
-          $2.DL,
-          $2.DT,
-          $2.EMBED,
-          $2.FIELDSET,
-          $2.FIGCAPTION,
-          $2.FIGURE,
-          $2.FOOTER,
-          $2.FORM,
-          $2.FRAME,
-          $2.FRAMESET,
-          $2.H1,
-          $2.H2,
-          $2.H3,
-          $2.H4,
-          $2.H5,
-          $2.H6,
-          $2.HEAD,
-          $2.HEADER,
-          $2.HGROUP,
-          $2.HR,
-          $2.HTML,
-          $2.IFRAME,
-          $2.IMG,
-          $2.INPUT,
-          $2.LI,
-          $2.LINK,
-          $2.LISTING,
-          $2.MAIN,
-          $2.MARQUEE,
-          $2.MENU,
-          $2.META,
-          $2.NAV,
-          $2.NOEMBED,
-          $2.NOFRAMES,
-          $2.NOSCRIPT,
-          $2.OBJECT,
-          $2.OL,
-          $2.P,
-          $2.PARAM,
-          $2.PLAINTEXT,
-          $2.PRE,
-          $2.SCRIPT,
-          $2.SECTION,
-          $2.SELECT,
-          $2.SOURCE,
-          $2.STYLE,
-          $2.SUMMARY,
-          $2.TABLE,
-          $2.TBODY,
-          $2.TD,
-          $2.TEMPLATE,
-          $2.TEXTAREA,
-          $2.TFOOT,
-          $2.TH,
-          $2.THEAD,
-          $2.TITLE,
-          $2.TR,
-          $2.TRACK,
-          $2.UL,
-          $2.WBR,
-          $2.XMP
+          $.ADDRESS,
+          $.APPLET,
+          $.AREA,
+          $.ARTICLE,
+          $.ASIDE,
+          $.BASE,
+          $.BASEFONT,
+          $.BGSOUND,
+          $.BLOCKQUOTE,
+          $.BODY,
+          $.BR,
+          $.BUTTON,
+          $.CAPTION,
+          $.CENTER,
+          $.COL,
+          $.COLGROUP,
+          $.DD,
+          $.DETAILS,
+          $.DIR,
+          $.DIV,
+          $.DL,
+          $.DT,
+          $.EMBED,
+          $.FIELDSET,
+          $.FIGCAPTION,
+          $.FIGURE,
+          $.FOOTER,
+          $.FORM,
+          $.FRAME,
+          $.FRAMESET,
+          $.H1,
+          $.H2,
+          $.H3,
+          $.H4,
+          $.H5,
+          $.H6,
+          $.HEAD,
+          $.HEADER,
+          $.HGROUP,
+          $.HR,
+          $.HTML,
+          $.IFRAME,
+          $.IMG,
+          $.INPUT,
+          $.LI,
+          $.LINK,
+          $.LISTING,
+          $.MAIN,
+          $.MARQUEE,
+          $.MENU,
+          $.META,
+          $.NAV,
+          $.NOEMBED,
+          $.NOFRAMES,
+          $.NOSCRIPT,
+          $.OBJECT,
+          $.OL,
+          $.P,
+          $.PARAM,
+          $.PLAINTEXT,
+          $.PRE,
+          $.SCRIPT,
+          $.SECTION,
+          $.SELECT,
+          $.SOURCE,
+          $.STYLE,
+          $.SUMMARY,
+          $.TABLE,
+          $.TBODY,
+          $.TD,
+          $.TEMPLATE,
+          $.TEXTAREA,
+          $.TFOOT,
+          $.TH,
+          $.THEAD,
+          $.TITLE,
+          $.TR,
+          $.TRACK,
+          $.UL,
+          $.WBR,
+          $.XMP
         ]),
-        [NS.MATHML]: /* @__PURE__ */ new Set([$2.MI, $2.MO, $2.MN, $2.MS, $2.MTEXT, $2.ANNOTATION_XML]),
-        [NS.SVG]: /* @__PURE__ */ new Set([$2.TITLE, $2.FOREIGN_OBJECT, $2.DESC]),
+        [NS.MATHML]: /* @__PURE__ */ new Set([$.MI, $.MO, $.MN, $.MS, $.MTEXT, $.ANNOTATION_XML]),
+        [NS.SVG]: /* @__PURE__ */ new Set([$.TITLE, $.FOREIGN_OBJECT, $.DESC]),
         [NS.XLINK]: /* @__PURE__ */ new Set(),
         [NS.XML]: /* @__PURE__ */ new Set(),
         [NS.XMLNS]: /* @__PURE__ */ new Set()
       };
-      NUMBERED_HEADERS = /* @__PURE__ */ new Set([$2.H1, $2.H2, $2.H3, $2.H4, $2.H5, $2.H6]);
+      NUMBERED_HEADERS = /* @__PURE__ */ new Set([$.H1, $.H2, $.H3, $.H4, $.H5, $.H6]);
       UNESCAPED_TEXT = /* @__PURE__ */ new Set([
         TAG_NAMES.STYLE,
         TAG_NAMES.SCRIPT,
@@ -33403,14 +33403,14 @@
     "node_modules/@ungap/structured-clone/esm/deserialize.js"() {
       init_types2();
       env = typeof self === "object" ? self : globalThis;
-      deserializer = ($4, _2) => {
+      deserializer = ($3, _2) => {
         const as2 = (out, index5) => {
-          $4.set(index5, out);
+          $3.set(index5, out);
           return out;
         };
         const unpair = (index5) => {
-          if ($4.has(index5))
-            return $4.get(index5);
+          if ($3.has(index5))
+            return $3.get(index5);
           const [type, value] = _2[index5];
           switch (type) {
             case PRIMITIVE:
@@ -33505,15 +33505,15 @@
         return [OBJECT, asString];
       };
       shouldSkip = ([TYPE, type]) => TYPE === PRIMITIVE && (type === "function" || type === "symbol");
-      serializer = (strict, json, $4, _2) => {
+      serializer = (strict, json, $3, _2) => {
         const as2 = (out, value) => {
           const index5 = _2.push(out) - 1;
-          $4.set(value, index5);
+          $3.set(value, index5);
           return index5;
         };
         const pair = (value) => {
-          if ($4.has(value))
-            return $4.get(value);
+          if ($3.has(value))
+            return $3.get(value);
           let [TYPE, type] = typeOf(value);
           switch (TYPE) {
             case PRIMITIVE: {
@@ -81849,7 +81849,7 @@ img.ProseMirror-separator {
     ].join(" ");
   }
   var _c = () => /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  function $3(e, n, t2, o) {
+  function $2(e, n, t2, o) {
     const r2 = document.createElement("div");
     r2.className = te(
       "bn-block-content",
@@ -83703,7 +83703,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var r2, s3;
-      const n = document.createElement("pre"), { dom: t2, contentDOM: o } = $3(
+      const n = document.createElement("pre"), { dom: t2, contentDOM: o } = $2(
         this.name,
         "code",
         ((r2 = this.options.domAttributes) == null ? void 0 : r2.blockContent) || {},
@@ -83721,7 +83721,7 @@ img.ProseMirror-separator {
       const e = this.options;
       return ({ editor: n, node: t2, getPos: o, HTMLAttributes: r2 }) => {
         var u, h2;
-        const s3 = document.createElement("pre"), i2 = document.createElement("select"), a2 = document.createElement("div"), { dom: c, contentDOM: l } = $3(
+        const s3 = document.createElement("pre"), i2 = document.createElement("select"), a2 = document.createElement("div"), { dom: c, contentDOM: l } = $2(
           this.name,
           "code",
           {
@@ -84079,7 +84079,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ node: e, HTMLAttributes: n }) {
       var t2, o;
-      return $3(
+      return $2(
         this.name,
         `h${e.attrs.level}`,
         {
@@ -84092,7 +84092,7 @@ img.ProseMirror-separator {
     addNodeView() {
       return ({ node: e, HTMLAttributes: n, getPos: t2 }) => {
         var c, l;
-        const { dom: o, contentDOM: r2 } = $3(
+        const { dom: o, contentDOM: r2 } = $2(
           this.name,
           `h${e.attrs.level}`,
           {
@@ -84353,7 +84353,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         "p",
         {
@@ -84366,7 +84366,7 @@ img.ProseMirror-separator {
     addNodeView() {
       return ({ HTMLAttributes: e, getPos: n }) => {
         var a2, c;
-        const { dom: t2, contentDOM: o } = $3(
+        const { dom: t2, contentDOM: o } = $2(
           this.name,
           "p",
           {
@@ -84489,7 +84489,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         // We use a <p> tag, because for <li> tags we'd need a <ul> element to put
         // them in to be semantically correct, which we can't have due to the
@@ -84613,7 +84613,7 @@ img.ProseMirror-separator {
       var s3, i2;
       const t2 = document.createElement("input");
       t2.type = "checkbox", t2.checked = e.attrs.checked, e.attrs.checked && t2.setAttribute("checked", "");
-      const { dom: o, contentDOM: r2 } = $3(
+      const { dom: o, contentDOM: r2 } = $2(
         this.name,
         "p",
         {
@@ -84658,7 +84658,7 @@ img.ProseMirror-separator {
           }
         };
         i2.addEventListener("change", a2);
-        const { dom: c, contentDOM: l } = $3(
+        const { dom: c, contentDOM: l } = $2(
           this.name,
           "p",
           {
@@ -84830,7 +84830,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         // We use a <p> tag, because for <li> tags we'd need an <ol> element to
         // put them in to be semantically correct, which we can't have due to the
@@ -84888,7 +84888,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         "p",
         {
@@ -84961,7 +84961,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         "blockquote",
         {
@@ -85043,7 +85043,7 @@ img.ProseMirror-separator {
     },
     renderHTML({ HTMLAttributes: e }) {
       var n, t2;
-      return $3(
+      return $2(
         this.name,
         "table",
         {
@@ -92425,10 +92425,10 @@ img.ProseMirror-separator {
     const {
       width,
       height,
-      $: $4
+      $: $3
     } = getCssDimensions(domElement);
-    let x = ($4 ? round(rect.width) : rect.width) / width;
-    let y2 = ($4 ? round(rect.height) : rect.height) / height;
+    let x = ($3 ? round(rect.width) : rect.width) / width;
+    let y2 = ($3 ? round(rect.height) : rect.height) / height;
     if (!x || !Number.isFinite(x)) {
       x = 1;
     }
@@ -94776,7 +94776,7 @@ img.ProseMirror-separator {
       item
     } : {}, [enabled, reference, floating, item]);
   }
-  var camelCaseToKebabCase = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($4, ofs) => (ofs ? "-" : "") + $4.toLowerCase());
+  var camelCaseToKebabCase = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($3, ofs) => (ofs ? "-" : "") + $3.toLowerCase());
   function execWithArgsOrReturn(valueOrFn, args2) {
     return typeof valueOrFn === "function" ? valueOrFn(args2) : valueOrFn;
   }
@@ -94956,7 +94956,7 @@ img.ProseMirror-separator {
           return x === y2 && (x !== 0 || 1 / x === 1 / y2) || x !== x && y2 !== y2;
         }
         var objectIs = typeof Object.is === "function" ? Object.is : is3;
-        var useState21 = React$1.useState, useEffect19 = React$1.useEffect, useLayoutEffect5 = React$1.useLayoutEffect, useDebugValue2 = React$1.useDebugValue;
+        var useState20 = React$1.useState, useEffect19 = React$1.useEffect, useLayoutEffect5 = React$1.useLayoutEffect, useDebugValue2 = React$1.useDebugValue;
         var didWarnOld18Alpha = false;
         var didWarnUncachedGetSnapshot = false;
         function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
@@ -94978,7 +94978,7 @@ img.ProseMirror-separator {
               }
             }
           }
-          var _useState = useState21({
+          var _useState = useState20({
             inst: {
               value,
               getSnapshot
@@ -95208,9 +95208,9 @@ img.ProseMirror-separator {
         }
         var objectIs = typeof Object.is === "function" ? Object.is : is3;
         var useSyncExternalStore = shim2.useSyncExternalStore;
-        var useRef24 = React$1.useRef, useEffect19 = React$1.useEffect, useMemo4 = React$1.useMemo, useDebugValue2 = React$1.useDebugValue;
+        var useRef25 = React$1.useRef, useEffect19 = React$1.useEffect, useMemo4 = React$1.useMemo, useDebugValue2 = React$1.useDebugValue;
         function useSyncExternalStoreWithSelector(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
-          var instRef = useRef24(null);
+          var instRef = useRef25(null);
           var inst;
           if (instRef.current === null) {
             inst = {
@@ -109737,6 +109737,7 @@ img.ProseMirror-separator {
   };
 
   // static/composer.js
+  var editorInstances = /* @__PURE__ */ new Map();
   async function uploadFile(file) {
     const formData = new FormData();
     formData.append("files[]", file);
@@ -109745,7 +109746,6 @@ img.ProseMirror-separator {
         method: "POST",
         body: formData,
         headers: {
-          // NodeBB expects CSRF token
           "x-csrf-token": document.querySelector('[component="csrf-token"]')?.getAttribute("content") || ""
         }
       });
@@ -109760,8 +109760,8 @@ img.ProseMirror-separator {
       return "";
     }
   }
-  function EditorWrapper() {
-    const [content5, setContent2] = (0, import_react143.useState)(null);
+  function BlockNoteEditor({ initialContent, onChange }) {
+    const editorRef = (0, import_react143.useRef)(null);
     const editor = fe2({
       schema: Ie.create({
         blockSpecs: {
@@ -109769,78 +109769,59 @@ img.ProseMirror-separator {
         }
       }),
       uploadFile,
-      initialContent: content5
+      initialContent: initialContent || [{ type: "paragraph" }]
     });
     (0, import_react143.useEffect)(() => {
-      const loadExistingContent = () => {
-        const textArea = document.querySelector('[component="composer"] textarea');
-        if (textArea && textArea.value) {
-          try {
-            const parsed = JSON.parse(textArea.value);
-            if (Array.isArray(parsed)) {
-              setContent2(parsed);
-            }
-          } catch (e) {
-            setContent2([
-              {
-                type: "paragraph",
-                content: textArea.value
-              }
-            ]);
-          }
-        }
-      };
-      loadExistingContent();
-    }, []);
-    const handleChange = async () => {
-      const blocks2 = editor.document;
-      const textArea = document.querySelector('[component="composer"] textarea');
-      if (textArea) {
-        textArea.value = JSON.stringify(blocks2);
-        const event = new Event("input", { bubbles: true });
-        textArea.dispatchEvent(event);
+      editorRef.current = editor;
+    }, [editor]);
+    const handleChange = () => {
+      if (onChange && editor) {
+        onChange(editor.document);
       }
     };
-    return /* @__PURE__ */ import_react143.default.createElement(
-      "div",
+    return /* @__PURE__ */ import_react143.default.createElement("div", { className: "blocknote-editor-wrapper" }, /* @__PURE__ */ import_react143.default.createElement(
+      Ot3,
       {
-        className: "blocknote-editor-wrapper",
-        style: {
-          background: "#fff",
-          border: "1px solid #e1e4e8",
-          borderRadius: "8px",
-          padding: "16px",
-          minHeight: "300px",
-          boxShadow: "0 1px 3px rgba(0,0,0,0.05)"
-        }
-      },
-      /* @__PURE__ */ import_react143.default.createElement(
-        Ot3,
-        {
-          editor,
-          onChange: handleChange,
-          theme: "light",
-          slashMenu: true,
-          formattingToolbar: true,
-          linkToolbar: true,
-          sideMenu: true,
-          filePanel: true
-        }
-      )
-    );
-  }
-  $(document).ready(() => {
-    const initComposer = () => {
-      const composerContainer = document.querySelector("#blocknote-composer");
-      if (composerContainer && !composerContainer.classList.contains("initialized")) {
-        composerContainer.classList.add("blocknote-composer", "initialized");
-        const root6 = (0, import_client2.createRoot)(composerContainer);
-        root6.render(/* @__PURE__ */ import_react143.default.createElement(EditorWrapper, null));
+        editor,
+        onChange: handleChange,
+        theme: "light",
+        slashMenu: true,
+        formattingToolbar: true,
+        linkToolbar: true,
+        sideMenu: true,
+        filePanel: true
       }
-    };
-    initComposer();
-    $(window).on("action:composer.loaded", initComposer);
-  });
+    ));
+  }
+  window.BlockNoteComposer = {
+    render(container, options = {}) {
+      if (!container)
+        return;
+      const root6 = (0, import_client2.createRoot)(container);
+      const reactComponent = /* @__PURE__ */ import_react143.default.createElement(
+        BlockNoteEditor,
+        {
+          initialContent: options.initialContent,
+          onChange: options.onChange
+        }
+      );
+      root6.render(reactComponent);
+      editorInstances.set(container, root6);
+    },
+    unmount(container) {
+      const root6 = editorInstances.get(container);
+      if (root6) {
+        root6.unmount();
+        editorInstances.delete(container);
+      }
+    },
+    focus(container) {
+      const editorElement = container.querySelector('[contenteditable="true"]');
+      if (editorElement) {
+        editorElement.focus();
+      }
+    }
+  };
 })();
 /*! Bundled license information:
 
